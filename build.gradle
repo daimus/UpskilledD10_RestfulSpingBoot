@@ -13,7 +13,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springdoc:springdoc-openapi-ui'
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.projectlombok:lombok'
