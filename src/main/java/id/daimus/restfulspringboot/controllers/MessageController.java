@@ -1,4 +1,4 @@
-package id.daimus.hellospringboot.controllers;
+package id.daimus.restfulspringboot.controllers;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

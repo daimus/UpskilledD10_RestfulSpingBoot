@@ -1,4 +1,4 @@
-package id.daimus.hellospringboot;
+package id.daimus.restfulspringboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

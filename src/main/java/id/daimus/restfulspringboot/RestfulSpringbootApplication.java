@@ -1,13 +1,13 @@
-package id.daimus.hellospringboot;
+package id.daimus.restfulspringboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloSpringbootApplication {
+public class RestfulSpringbootApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloSpringbootApplication.class, args);
+        SpringApplication.run(RestfulSpringbootApplication.class, args);
     }
 
 }
