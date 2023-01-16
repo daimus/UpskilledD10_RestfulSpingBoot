@@ -1,5 +1,5 @@
 # Restful Spring Boot
-Aplikasi ini digunakan untuk mengirim/menerima pesan secara anonymous.
+Aplikasi ini digunakan untuk mengirim/menerima pesan (kritik,saran,review dlsb) baik secara anonymous maupun terbuka.
 
 ## Installation
 ```
