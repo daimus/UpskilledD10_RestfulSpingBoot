@@ -9,11 +9,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
-@RestController
 @Slf4j
+@RestController
 @RequestMapping("/v1/messages")
 public class MessageController {
     @Autowired
