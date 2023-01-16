@@ -27,4 +27,4 @@ docker run -p 8080:8080 restful-springboot
 [http://**[HOST]**:**[PORT]**/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ## Demo
-[http://103.30.194.137:8080/swagger-ui.html](https://api-rahasia.daimus.id/swagger-ui.html)
+[https://api-rahasia.daimus.id/swagger-ui.html](http://103.30.194.137:8080/swagger-ui.html)
