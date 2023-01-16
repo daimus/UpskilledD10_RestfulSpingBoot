@@ -1,8 +1,18 @@
-# Hello Spring Boot
+# Restful Spring Boot
+Aplikasi ini digunakan untuk mengirim/menerima pesan secara anonymous.
 
-## Problem 1 - Say Hello from Spring Boot
+## Installation
+```
+git clone https://github.com/daimus/UpskilledD10_RestfulSpingBoot
 
-## Problem 2 - Endpoint Description
-1. GET Method: Digunakan untuk mendapatkan resource tertentu
-2. POST Method: Digunakan untuk mengirim entity resource tertentu
-3. DELETE Method: Digunakan untuk menghapus resource tertentu
+mvn spring-boot:run
+or
+gradle bootRun
+```
+## Docker
+```dockerfile
+docker build -t restful-springboot .
+docker run -p 8080:8080 restful-springboot
+```
+## API Documentation
+[http://**[HOST]**:**[PORT]**/swagger-ui.html](http://localhost:8080/swagger-ui.html)
