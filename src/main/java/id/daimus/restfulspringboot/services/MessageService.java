@@ -15,10 +15,31 @@ public class MessageService {
     @Autowired
     private MessageRepository messageRepository;
     public Optional<Message> getMessageById(Long id){
-        return messageRepository.findById(id);
+        Optional<Message> message = messageRepository.findById(id);
+        if (message.isPresent()){
+            if (message.get().getIsAnonymous()){
+                message.get().setFrom("*****");
+            }
+        }
+        return message;
     }
     public List<Message> getMessages(){
-        return (List<Message>) messageRepository.findAll();
+        List<Message> messages = (List<Message>) messageRepository.findAll();
+        for (Message message : messages) {
+            if (message.getIsAnonymous()){
+                message.setFrom("*****");
+            }
+        }
+        return messages;
+    }
+    public List<Message> getMessagesByMessageBookId(Long messageBookId){
+        List<Message> messages = messageRepository.getMessagesByMessageBook(String.valueOf(messageBookId));
+        for (Message message : messages) {
+            if (message.getIsAnonymous()){
+                message.setFrom("*****");
+            }
+        }
+        return messages;
     }
     public Message createMessage(Message message){
         return messageRepository.save(message);

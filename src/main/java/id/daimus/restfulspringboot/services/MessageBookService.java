@@ -17,7 +17,7 @@ public class MessageBookService {
     @Autowired
     MessageBookRepository messageBookRepository;
     @Autowired
-    MessageRepository messageRepository;
+    MessageService messageService;
 
     public Optional<MessageBook> getMessageBookById(Long id) {
         return messageBookRepository.findById(id);
@@ -32,8 +32,7 @@ public class MessageBookService {
         if (messageBook.isPresent()){
             ObjectMapper objectMapper = new ObjectMapper();
             Map<String, Object> map = objectMapper.convertValue(messageBook.get(), Map.class);
-            List<Message> messages = messageRepository.getMessagesByMessageBook(String.valueOf(id));
-            System.out.println(messages);
+            List<Message> messages = messageService.getMessagesByMessageBookId(id);
             map.put("messages", messages);
             return map;
         }
